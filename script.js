@@ -1,9 +1,9 @@
 var count = document.getElementById(`count`);
 var click = document.getElementById(`click`);
-var counter = parseInt(sessionStorage.getItem(`count`));
+var counter = parseInt(localStorage.getItem(`count`));
 
-if (sessionStorage.getItem(`count`)) {
-    var counter = parseInt(sessionStorage.getItem(`count`));
+if (localStorage.getItem(`count`)) {
+    var counter = parseInt(localStorage.getItem(`count`));
     count.textContent = counter
 }
 else {
@@ -13,5 +13,5 @@ else {
 click.addEventListener(`click`, function(){
     counter += 1
     count.textContent = counter
-    sessionStorage.setItem(`count`, counter);
+    localStorage.setItem(`count`, counter);
 });
