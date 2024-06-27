@@ -3,7 +3,11 @@
     src: url("/assets/fonts/benzin-bold.otf");
 }
 
-* {font-family: "benzin-bold"; text-align: center; background-color: #171614; color: white; touch-action: manipulation;}
+* {font-family: "benzin-bold"; text-align: center; background-color: #171614; color: white;}
+
+#click {
+    touch-action: manipulation;
+}
 
 #click.animate {
     transform: scale(1.1);
