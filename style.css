@@ -3,10 +3,9 @@
     src: url("/assets/fonts/benzin-bold.otf");
 }
 
-* {font-family: "benzin-bold"; text-align: center; background-color: #171614; color: white;}
+* {font-family: "benzin-bold"; text-align: center; background-color: #171614; color: white; touch-action: manipulation;}
 
-button {
-    border: none;
-    outline: none;
-    background-color: transparent;
+#click.animate {
+    transform: scale(1.1);
+    transition: 650ms;
 }
