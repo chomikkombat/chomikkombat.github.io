@@ -3,7 +3,7 @@ const click = document.getElementById(`click`)
 var counter = parseInt(localStorage.getItem(`count`));
 
 // сохранение
-if (sessionStorage.getItem(`count`)) {
+if (localStorage.getItem(`count`)) {
     var counter = parseInt(localStorage.getItem(`count`));
     count.textContent = counter
 }
