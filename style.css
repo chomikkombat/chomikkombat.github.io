@@ -5,6 +5,10 @@
 
 * {font-family: "benzin-bold"; text-align: center; background-color: #171614; color: white;}
 
+#click {
+    touch-action: none;
+}
+
 #click.animate {
     transform: scale(1.1);
     transition: 650ms;
