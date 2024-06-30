@@ -1,6 +1,6 @@
 var count = document.getElementById(`count`)
 const click = document.getElementById(`click`)
-var counter = parseInt(sessionStorage.getItem(`count`));
+var counter = parseInt(localStorage.getItem(`count`));
 var progressBar = document.getElementById(`progress-bar`)
 var notify = document.getElementById(`notify`)
 let upgrade = 1;
@@ -8,9 +8,15 @@ let upgrade = 1;
 notify.style.visibility = "hidden"
 
 // сохранение
-if (sessionStorage.getItem(`count`)) {
-    var counter = parseInt(sessionStorage.getItem(`count`));
+
+if (localStorage.getItem(`count`)) {
+    var counter = parseInt(localStorage.getItem(`count`));
     count.textContent = counter;
+
+if (localStorage.getItem(`count`)) {
+    var counter = parseInt(localStorage.getItem(`count`));
+    count.textContent = counter
+
 }
 else {
     var counter = 0;
@@ -36,5 +42,5 @@ click.addEventListener(`click`, function(event) {
         }, 500);
     }
     count.textContent = counter
-    sessionStorage.setItem(`count`, counter);
-});
+    localStorage.setItem(`count`, counter);
+})};
