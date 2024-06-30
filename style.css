@@ -5,11 +5,23 @@
 
 * {font-family: "benzin-bold"; text-align: center; background-color: #171614; color: white;}
 
-#click {
-    touch-action: manipulation;
-}
-
 #click.animate {
     transform: scale(1.1);
     transition: 650ms;
+}
+
+#notify.animate {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+        transform: translateY(0)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-30px)
+    }
 }
