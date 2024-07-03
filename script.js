@@ -1,5 +1,5 @@
 var count = document.getElementById(`count`)
-const click = document.getElementById(`click`)
+var click = document.getElementById(`click`)
 var counter = parseInt(localStorage.getItem(`count`));
 var progressBar = document.getElementById(`progress-bar`)
 var notify = document.getElementById(`notify`)
@@ -30,7 +30,6 @@ click.addEventListener(`click`, function(event) {
         click.classList.remove('animate');
     }, 100);
     // ...
-    window.navigator.vibrate(200);
     counter += upgrade;
     if (counter % 1000 === 0) {
         upgrade += 1;
