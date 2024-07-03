@@ -47,4 +47,5 @@ body {
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
