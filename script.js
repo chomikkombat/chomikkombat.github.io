@@ -42,8 +42,3 @@ click.addEventListener('click', function(event) {
   count.textContent = counter;
   localStorage.setItem(`count`, counter);
 });
-
-divElement.addEventListener("click", function() {
-    isClicked = true;
-    // Additional code to execute when the div is clicked
-});
